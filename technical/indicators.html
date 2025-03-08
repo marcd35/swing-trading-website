@@ -1,1 +1,334 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the essential technical indicators for swing trading, including moving averages, oscillators, and volume indicators to improve your trading success.">
+    <title>Key Technical Indicators for Swing Trading | Swing Trading Guide</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/indicators.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <h1>Swing Trading<span class="highlight">Guide</span></h1>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="../introduction.html">Introduction</a></li>
+                        <li><a href="../strategies/index.html">Strategies</a></li>
+                        <li><a href="index.html">Technical Analysis</a></li>
+                        <li><a href="../risk-management.html">Risk Management</a></li>
+                        <li><a href="../trader-wisdom.html">Trader Wisdom</a></li>
+                        <li><a href="../building-system.html">Build Your System</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Key Technical Indicators for Swing Trading</h1>
+                <div class="breadcrumbs">
+                    <a href="../index.html">Home</a> &raquo; <a href="index.html">Technical Analysis</a> &raquo; Indicators
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <div class="container">
+                <div class="two-col">
+                    <div class="article-content">
+                        <p class="lead">
+                            Technical indicators are mathematical calculations based on price, volume, or open interest of a security. When used correctly, they can help identify trends, measure momentum, and signal potential reversal points—all essential aspects of successful swing trading.
+                        </p>
+
+                        <div class="indicator-intro">
+                            <h2>How to Use Technical Indicators Effectively</h2>
+                            <p>Technical indicators are tools, not crystal balls. To use them effectively in swing trading:</p>
+                            
+                            <div class="usage-tips">
+                                <div class="tip-card">
+                                    <h3>Avoid Indicator Overload</h3>
+                                    <p>Using too many indicators creates confusion and conflicting signals. Limit your analysis to 3-4 key indicators that provide different types of information.</p>
+                                </div>
+                                
+                                <div class="tip-card">
+                                    <h3>Combine Different Types</h3>
+                                    <p>Pair trend indicators with momentum oscillators to gain a more complete picture of market conditions, rather than using multiple indicators of the same type.</p>
+                                </div>
+                                
+                                <div class="tip-card">
+                                    <h3>Understand the Math</h3>
+                                    <p>Knowing how an indicator is calculated helps you understand its limitations and why it might fail in certain market conditions.</p>
+                                </div>
+                                
+                                <div class="tip-card">
+                                    <h3>Confirm with Price Action</h3>
+                                    <p>Always verify indicator signals with actual price movement and patterns before making trading decisions.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="indicator-category" id="trend-indicators">
+                            <h2>Trend Indicators</h2>
+                            <p>Trend indicators help identify the direction and strength of price movements. They excel at showing whether a market is trending up, down, or moving sideways.</p>
+                            
+                            <div class="indicator" id="moving-averages">
+                                <h3>Moving Averages</h3>
+                                <div class="indicator-content">
+                                    <div class="indicator-description">
+                                        <p>Moving averages smooth out price data to create a single flowing line, making it easier to identify the direction of the trend. They come in several variations, with Simple Moving Averages (SMA) and Exponential Moving Averages (EMA) being the most common.</p>
+                                        
+                                        <h4>Simple Moving Average (SMA)</h4>
+                                        <p>Calculates the average price over a specified period by giving equal weight to each price point.</p>
+                                        <ul>
+                                            <li><strong>Calculation:</strong> Sum of closing prices divided by the number of periods</li>
+                                            <li><strong>Common periods:</strong> 20-day (short-term), 50-day (intermediate), 200-day (long-term)</li>
+                                            <li><strong>Advantages:</strong> Simple to understand, less prone to false signals</li>
+                                            <li><strong>Disadvantages:</strong> Slower to respond to price changes, lag in fast-moving markets</li>
+                                        </ul>
+                                        
+                                        <h4>Exponential Moving Average (EMA)</h4>
+                                        <p>Places more weight on recent price data, making it more responsive to new information.</p>
+                                        <ul>
+                                            <li><strong>Calculation:</strong> [Close - Previous EMA] × (2 ÷ (Periods + 1)) + Previous EMA</li>
+                                            <li><strong>Common periods:</strong> 8-day, 21-day, 55-day</li>
+                                            <li><strong>Advantages:</strong> More responsive to recent price changes, reduces lag</li>
+                                            <li><strong>Disadvantages:</strong> More prone to whipsaws in volatile markets</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="indicator-example">
+                                        <div class="example-chart">
+                                            <img src="../images/indicators/moving-averages.jpg" alt="Moving Averages Example" class="indicator-chart">
+                                        </div>
+                                        <div class="example-description">
+                                            <p>This chart shows 20-day SMA (blue) and 50-day SMA (red) applied to a daily price chart. Notice how crossovers (circled) can signal trend changes, and how the moving averages act as dynamic support and resistance levels.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="indicator-usage">
+                                        <h4>Swing Trading Applications</h4>
+                                        <ol>
+                                            <li><strong>Trend Direction:</strong> When price is above the moving average, the trend is up; when below, the trend is down</li>
+                                            <li><strong>Moving Average Crossovers:</strong> When a shorter-term MA crosses above a longer-term MA, it signals a potential bullish trend (Golden Cross); the opposite is a bearish signal (Death Cross)</li>
+                                            <li><strong>Dynamic Support/Resistance:</strong> Price often bounces off moving averages during trends, providing potential entry points</li>
+                                            <li><strong>Multiple Timeframe Analysis:</strong> Using MAs on different timeframes to confirm the strength of a trend</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional trend indicators would continue here -->
+                        </div>
+
+                        <div class="indicator-category" id="momentum-indicators">
+                            <h2>Momentum Indicators</h2>
+                            <p>Momentum indicators measure the rate of price changes over time. They help identify potential reversals by showing when a market is overbought or oversold, and can signal divergences between price and momentum.</p>
+                            
+                            <div class="indicator" id="rsi">
+                                <h3>Relative Strength Index (RSI)</h3>
+                                <div class="indicator-content">
+                                    <div class="indicator-description">
+                                        <p>The Relative Strength Index (RSI) measures the speed and change of price movements, oscillating between 0 and 100. It was developed by J. Welles Wilder and is one of the most popular momentum oscillators used by swing traders.</p>
+                                        
+                                        <h4>Calculation</h4>
+                                        <p>RSI = 100 - (100 / (1 + RS))<br>
+                                        Where RS = Average Gain / Average Loss over a specified period</p>
+                                        
+                                        <h4>Interpretation</h4>
+                                        <ul>
+                                            <li><strong>RSI above 70:</strong> Potentially overbought condition (bearish)</li>
+                                            <li><strong>RSI below 30:</strong> Potentially oversold condition (bullish)</li>
+                                            <li><strong>RSI crossing above 50:</strong> Bullish momentum</li>
+                                            <li><strong>RSI crossing below 50:</strong> Bearish momentum</li>
+                                            <li><strong>Default period:</strong> 14 periods (adjustable based on timeframe)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="indicator-example">
+                                        <div class="example-chart">
+                                            <img src="../images/indicators/rsi.jpg" alt="RSI Example" class="indicator-chart">
+                                        </div>
+                                        <div class="example-description">
+                                            <p>This chart shows 14-period RSI applied to a daily price chart. Notice how RSI readings above 70 (overbought zone) often preceded price declines, while readings below 30 (oversold zone) frequently preceded rallies.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional momentum indicators would continue here -->
+                        </div>
+
+                        <!-- Other indicator categories would continue here -->
+
+                        <div class="next-steps">
+                            <h2>Next Steps in Technical Analysis</h2>
+                            <p>Now that you understand key technical indicators, consider exploring these related topics to enhance your swing trading approach:</p>
+                            
+                            <div class="related-topics">
+                                <a href="chart-patterns.html" class="topic-card">
+                                    <h3>Chart Patterns</h3>
+                                    <p>Learn how to identify and trade formations like head and shoulders, double tops/bottoms, triangles, and more.</p>
+                                </a>
+                                
+                                <a href="candlestick-patterns.html" class="topic-card">
+                                    <h3>Candlestick Patterns</h3>
+                                    <p>Discover how to interpret single and multi-candle formations that signal potential reversals and continuations.</p>
+                                </a>
+                                
+                                <a href="support-resistance.html" class="topic-card">
+                                    <h3>Support and Resistance</h3>
+                                    <p>Master the identification of key price levels that act as barriers and decision points in the market.</p>
+                                </a>
+                            </div>
+                            
+                            <div class="cta-box">
+                                <h3>Ready to Apply These Indicators?</h3>
+                                <p>Put your technical indicator knowledge to work by exploring our core swing trading strategies.</p>
+                                <a href="../strategies/core-strategies.html" class="btn btn-primary">Explore Swing Trading Strategies</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="sidebar">
+                        <div class="card toc-card">
+                            <h3>On This Page</h3>
+                            <ul class="toc-list">
+                                <li><a href="#trend-indicators">Trend Indicators</a>
+                                    <ul>
+                                        <li><a href="#moving-averages">Moving Averages</a></li>
+                                        <li><a href="#macd">MACD</a></li>
+                                        <li><a href="#adx">ADX</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#momentum-indicators">Momentum Indicators</a>
+                                    <ul>
+                                        <li><a href="#rsi">RSI</a></li>
+                                        <li><a href="#stochastic">Stochastic Oscillator</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#volatility-indicators">Volatility Indicators</a>
+                                    <ul>
+                                        <li><a href="#bollinger-bands">Bollinger Bands</a></li>
+                                        <li><a href="#atr">Average True Range</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#volume-indicators">Volume Indicators</a>
+                                    <ul>
+                                        <li><a href="#obv">On-Balance Volume</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#indicator-combination">Combining Indicators</a></li>
+                                <li><a href="#indicator-customization">Customizing Indicators</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card resource-card mt-lg">
+                            <h3>Related Resources</h3>
+                            <ul class="resource-list">
+                                <li><a href="../strategies/core-strategies.html#trend-following">Trend Following Strategy</a></li>
+                                <li><a href="../strategies/core-strategies.html#mean-reversion">Mean Reversion Strategy</a></li>
+                                <li><a href="../risk-management.html">Risk Management Techniques</a></li>
+                                <li><a href="../building-system.html">Building Your Trading System</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card indicator-finder mt-lg">
+                            <h3>Find the Right Indicator</h3>
+                            <div class="finder-questions">
+                                <div class="finder-question">
+                                    <p><strong>Looking to identify trends?</strong></p>
+                                    <p class="recommendation">Try <a href="#moving-averages">Moving Averages</a> or <a href="#macd">MACD</a></p>
+                                </div>
+                                
+                                <div class="finder-question">
+                                    <p><strong>Want to spot overbought/oversold conditions?</strong></p>
+                                    <p class="recommendation">Consider <a href="#rsi">RSI</a> or <a href="#stochastic">Stochastic</a></p>
+                                </div>
+                                
+                                <div class="finder-question">
+                                    <p><strong>Need to gauge market volatility?</strong></p>
+                                    <p class="recommendation"><a href="#bollinger-bands">Bollinger Bands</a> or <a href="#atr">ATR</a> are your best options</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card ebook-cta mt-lg">
+                            <h3>Get the Complete Guide</h3>
+                            <p>Download our comprehensive technical analysis guide with detailed indicator explanations and trading setups.</p>
+                            <a href="../index.html#ebook-cta" class="btn btn-primary btn-block">Download Free Ebook</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Swing Trading<span class="highlight">Guide</span></h2>
+                    <p>Your complete resource for mastering swing trading strategies and techniques.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Site Navigation</h3>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../introduction.html">Introduction</a></li>
+                            <li><a href="../strategies/index.html">Strategies</a></li>
+                            <li><a href="index.html">Technical Analysis</a></li>
+                            <li><a href="../risk-management.html">Risk Management</a></li>
+                            <li><a href="../trader-wisdom.html">Trader Wisdom</a></li>
+                            <li><a href="../building-system.html">Build Your System</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-resources">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="../index.html#ebook-cta">Free Ebook</a></li>
+                            <li><a href="#">Trading Glossary</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Swing Trading Guide. All rights reserved.</p>
+                <div class="footer-disclaimer">
+                    <p>Disclaimer: All information provided on this site is for educational purposes only and does not constitute financial advice. Trading involves risk, and past performance is not indicative of future results.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/indicators.js" defer></script>
+</body>
+</html>

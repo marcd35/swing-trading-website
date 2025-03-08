@@ -1,1 +1,366 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn essential risk management techniques for swing trading, including position sizing, stop-loss strategies, and maintaining positive risk-reward ratios.">
+    <title>Risk Management in Swing Trading | Swing Trading Guide</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/risk-management.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Swing Trading<span class="highlight">Guide</span></h1>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="strategies/index.html">Strategies</a></li>
+                        <li><a href="technical/index.html">Technical Analysis</a></li>
+                        <li><a href="risk-management.html">Risk Management</a></li>
+                        <li><a href="trader-wisdom.html">Trader Wisdom</a></li>
+                        <li><a href="building-system.html">Build Your System</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Risk Management in Swing Trading</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> &raquo; Risk Management
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <div class="container">
+                <div class="two-col">
+                    <div class="article-content">
+                        <p class="lead">
+                            Effective risk management is the foundation of successful swing trading. While strategy and analysis help identify opportunities, proper risk control ensures longevity in the markets and protects your trading capital from catastrophic losses.
+                        </p>
+
+                        <div class="risk-importance">
+                            <h2>Why Risk Management Is Critical</h2>
+                            <p>Many traders focus exclusively on finding winning trades while neglecting the equally important aspect of managing risk. Consider these statistics:</p>
+                            
+                            <div class="statistics-grid">
+                                <div class="statistic-card">
+                                    <div class="statistic-value">70-90%</div>
+                                    <div class="statistic-description">Of day traders and short-term speculators lose money</div>
+                                </div>
+                                
+                                <div class="statistic-card">
+                                    <div class="statistic-value">2%</div>
+                                    <div class="statistic-description">Maximum risk per trade recommended by professional traders</div>
+                                </div>
+                                
+                                <div class="statistic-card">
+                                    <div class="statistic-value">50%</div>
+                                    <div class="statistic-description">Loss requires 100% gain just to break even</div>
+                                </div>
+                                
+                                <div class="statistic-card">
+                                    <div class="statistic-value">30-40%</div>
+                                    <div class="statistic-description">Win rate can be profitable with proper risk management</div>
+                                </div>
+                            </div>
+                            
+                            <div class="key-concept">
+                                <h3>The Mathematics of Loss</h3>
+                                <p>Understanding the asymmetric nature of gains and losses is fundamental to risk management:</p>
+                                
+                                <div class="recovery-table-container">
+                                    <table class="recovery-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Portfolio Loss</th>
+                                                <th>Required Gain to Break Even</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10%</td>
+                                                <td>11.1%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20%</td>
+                                                <td>25%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>30%</td>
+                                                <td>42.9%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>40%</td>
+                                                <td>66.7%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>50%</td>
+                                                <td>100%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>60%</td>
+                                                <td>150%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>70%</td>
+                                                <td>233.3%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>80%</td>
+                                                <td>400%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>90%</td>
+                                                <td>900%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <p>As the table demonstrates, losses have a disproportionate impact on your portfolio. A 50% loss requires a 100% gain just to break even, which is why preventing large drawdowns is essential.</p>
+                            </div>
+                        </div>
+
+                        <div class="risk-section" id="position-sizing">
+                            <h2>Position Sizing Techniques</h2>
+                            <p>Position sizing determines how much capital to allocate to each trade. Proper position sizing ensures that no single trade can significantly damage your account.</p>
+                            
+                            <div class="technique" id="percentage-risk">
+                                <h3>Percentage Risk Method</h3>
+                                <div class="technique-content">
+                                    <div class="technique-description">
+                                        <p>This approach risks a consistent percentage of your trading capital on each trade, regardless of the specific security or setup. Most professional traders risk between 0.5% and 2% per trade.</p>
+                                        
+                                        <h4>Formula:</h4>
+                                        <div class="formula">
+                                            <p>Position Size = (Account × Risk %) ÷ Stop Distance</p>
+                                        </div>
+                                        
+                                        <h4>Example:</h4>
+                                        <ul>
+                                            <li>Account size: $25,000</li>
+                                            <li>Risk percentage: 1%</li>
+                                            <li>Entry price: $50</li>
+                                            <li>Stop-loss price: $48 (4% stop distance)</li>
+                                            <li>Risk amount: $25,000 × 1% = $250</li>
+                                            <li>Position size: $250 ÷ ($50 - $48) = 125 shares</li>
+                                        </ul>
+                                        
+                                        <h4>Advantages:</h4>
+                                        <ul>
+                                            <li>Automatically adjusts position size based on volatility (wider stops result in smaller positions)</li>
+                                            <li>Ensures consistent risk exposure across different securities</li>
+                                            <li>Prevents outsized losses from single trades</li>
+                                            <li>Allows your position sizing to scale with your account</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="technique-tools">
+                                        <h4>Position Size Calculator</h4>
+                                        <div class="calculator-placeholder">
+                                            <div class="calculator-description">
+                                                <p>A simple calculator tool would normally appear here where you can input:</p>
+                                                <ul>
+                                                    <li>Account size</li>
+                                                    <li>Risk percentage</li>
+                                                    <li>Entry price</li>
+                                                    <li>Stop-loss price</li>
+                                                </ul>
+                                                <p>The calculator would then determine your position size and show your dollar risk.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="technique" id="atr-based">
+                                <h3>ATR-Based Position Sizing</h3>
+                                <div class="technique-content">
+                                    <div class="technique-description">
+                                        <p>This method uses the Average True Range (ATR) indicator to determine position size based on a security's volatility, ensuring that you account for each security's specific risk characteristics.</p>
+                                        
+                                        <h4>Implementation:</h4>
+                                        <ol>
+                                            <li>Calculate the ATR for your chosen timeframe (typically 14 periods)</li>
+                                            <li>Set your stop loss at a multiple of ATR (commonly 2-3 ATR units from entry)</li>
+                                            <li>Calculate position size using the percentage risk formula with this ATR-based stop distance</li>
+                                        </ol>
+                                        
+                                        <h4>Example:</h4>
+                                        <ul>
+                                            <li>Account size: $25,000</li>
+                                            <li>Risk percentage: 1% ($250)</li>
+                                            <li>Stock price: $75</li>
+                                            <li>14-day ATR: $2.50</li>
+                                            <li>Stop distance: 2 × ATR = $5.00</li>
+                                            <li>Position size: $250 ÷ $5.00 = 50 shares</li>
+                                        </ul>
+                                        
+                                        <h4>Advantages:</h4>
+                                        <ul>
+                                            <li>Adapts to market volatility automatically</li>
+                                            <li>Places stops at logical levels based on actual price movement</li>
+                                            <li>Reduces arbitrary stop placement</li>
+                                            <li>Works across different securities and timeframes</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="technique-chart">
+                                        <img src="images/risk-management/atr-position-sizing.jpg" alt="ATR-Based Position Sizing" class="technique-image">
+                                        <p class="chart-caption">Chart showing stop placement at 2 ATR below entry in an uptrend, with position sized accordingly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional position sizing techniques would continue here -->
+                        </div>
+
+                        <!-- Additional risk management sections would continue here -->
+
+                        <div class="conclusion">
+                            <h2>Remember: Risk Management Is Trading</h2>
+                            <p>Many traders spend the majority of their time searching for perfect entries while neglecting risk management. In reality, how you manage risk has a far greater impact on your long-term results than entry techniques.</p>
+                            <p>As veteran trader Mark Minervini puts it: "Amateur traders focus on being right. Professional traders focus on how much they'll lose when they're wrong."</p>
+                            <p>By implementing the risk management techniques covered in this guide, you'll be positioning yourself among the minority of traders who approach the markets with the discipline and structure needed for long-term success.</p>
+                            
+                            <div class="next-topic">
+                                <p>Ready to build a complete trading system? Continue to:</p>
+                                <a href="building-system.html" class="btn btn-primary">Building Your Swing Trading System &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="sidebar">
+                        <div class="card toc-card">
+                            <h3>On This Page</h3>
+                            <ul class="toc-list">
+                                <li><a href="#position-sizing">Position Sizing Techniques</a>
+                                    <ul>
+                                        <li><a href="#percentage-risk">Percentage Risk Method</a></li>
+                                        <li><a href="#atr-based">ATR-Based Sizing</a></li>
+                                        <li><a href="#tiered-building">Tiered Position Building</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#stop-loss">Stop-Loss Strategies</a>
+                                    <ul>
+                                        <li><a href="#technical-stop">Technical Stop-Loss</a></li>
+                                        <li><a href="#volatility-stop">Volatility-Based Stop</a></li>
+                                        <li><a href="#time-based-stop">Time-Based Stop</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#risk-reward">Risk-Reward Ratio</a></li>
+                                <li><a href="#trailing-stops">Trailing Stops & Profit Taking</a></li>
+                                <li><a href="#risk-management-plan">Creating Your Plan</a></li>
+                                <li><a href="#risk-management-mistakes">Common Mistakes</a></li>
+                                <li><a href="#risk-psychology">Psychology of Risk</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card calculator-card mt-lg">
+                            <h3>Risk Calculator</h3>
+                            <div class="calculator-placeholder">
+                                <div class="calculator-description">
+                                    <p>A position size calculator would normally appear here with fields for:</p>
+                                    <ul>
+                                        <li>Account size</li>
+                                        <li>Risk percentage</li>
+                                        <li>Entry price</li>
+                                        <li>Stop-loss price</li>
+                                    </ul>
+                                    <p>It would calculate your position size and risk amount.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card resource-card mt-lg">
+                            <h3>Related Resources</h3>
+                            <ul class="resource-list">
+                                <li><a href="strategies/core-strategies.html">Core Trading Strategies</a></li>
+                                <li><a href="technical/indicators.html">Technical Indicators</a></li>
+                                <li><a href="building-system.html">Building Your Trading System</a></li>
+                                <li><a href="trader-wisdom.html">Wisdom from Elite Traders</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card ebook-cta mt-lg">
+                            <h3>Get the Complete Guide</h3>
+                            <p>Download our comprehensive risk management guide with templates and worksheets.</p>
+                            <a href="index.html#ebook-cta" class="btn btn-primary btn-block">Download Free Ebook</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Swing Trading<span class="highlight">Guide</span></h2>
+                    <p>Your complete resource for mastering swing trading strategies and techniques.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Site Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="strategies/index.html">Strategies</a></li>
+                            <li><a href="technical/index.html">Technical Analysis</a></li>
+                            <li><a href="risk-management.html">Risk Management</a></li>
+                            <li><a href="trader-wisdom.html">Trader Wisdom</a></li>
+                            <li><a href="building-system.html">Build Your System</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-resources">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="index.html#ebook-cta">Free Ebook</a></li>
+                            <li><a href="#">Trading Glossary</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Swing Trading Guide. All rights reserved.</p>
+                <div class="footer-disclaimer">
+                    <p>Disclaimer: All information provided on this site is for educational purposes only and does not constitute financial advice. Trading involves risk, and past performance is not indicative of future results.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="js/navigation.js" defer></script>
+    <script src="js/risk-management.js" defer></script>
+</body>
+</html>

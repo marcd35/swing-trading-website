@@ -1,1 +1,377 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the core swing trading strategies including breakout trading, mean reversion, trend following, pullback trading, and price action trading.">
+    <title>Core Swing Trading Strategies | Swing Trading Guide</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/core-strategies.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <h1>Swing Trading<span class="highlight">Guide</span></h1>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="../introduction.html">Introduction</a></li>
+                        <li><a href="index.html">Strategies</a></li>
+                        <li><a href="../technical/index.html">Technical Analysis</a></li>
+                        <li><a href="../risk-management.html">Risk Management</a></li>
+                        <li><a href="../trader-wisdom.html">Trader Wisdom</a></li>
+                        <li><a href="../building-system.html">Build Your System</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Core Swing Trading Strategies</h1>
+                <div class="breadcrumbs">
+                    <a href="../index.html">Home</a> &raquo; <a href="index.html">Strategies</a> &raquo; Core Strategies
+                </div>
+            </div>
+        </section>
+
+        <section class="article-section">
+            <div class="container">
+                <div class="two-col">
+                    <div class="article-content">
+                        <p class="lead">
+                            These fundamental swing trading strategies form the foundation of successful trading approaches. Mastering these core methods will provide you with versatile tools to profit in various market conditions.
+                        </p>
+
+                        <div class="strategy" id="breakout-trading">
+                            <h2>1. Breakout Trading</h2>
+                            <div class="strategy-intro">
+                                <p>
+                                    Breakout trading focuses on identifying securities poised to move beyond established support or resistance levels. When price breaks through these thresholds, it often signals the start of a new trend, providing opportunities for significant profits.
+                                </p>
+                            </div>
+                            
+                            <h3>Key Elements</h3>
+                            <ul>
+                                <li>Entry occurs when price convincingly breaks through support/resistance</li>
+                                <li>Volume confirmation is essential for validating breakouts</li>
+                                <li>Initial stop-loss typically placed below the breakout level for long positions</li>
+                                <li>Profit targets often set at prior resistance levels or Fibonacci extensions</li>
+                            </ul>
+                            
+                            <h3>Tools and Indicators</h3>
+                            <ul>
+                                <li>Bollinger Bands to identify price compression before breakouts</li>
+                                <li>Fibonacci retracement levels to identify potential breakout points</li>
+                                <li>Volume indicators to confirm breakout legitimacy</li>
+                            </ul>
+                            
+                            <div class="strategy-example">
+                                <h3>Example Breakout Setup</h3>
+                                <div class="example-scenario">
+                                    <p><strong>Scenario:</strong> Stock XYZ has been consolidating between $45 and $50 for three weeks with decreasing volume. The price approaches the upper resistance at $50.</p>
+                                    
+                                    <p><strong>Entry Signal:</strong> XYZ breaks above $50 with volume at least 150% of its 20-day average.</p>
+                                    
+                                    <p><strong>Stop Loss:</strong> Place a stop at $48.50, just below the most recent swing low within the consolidation.</p>
+                                    
+                                    <p><strong>Profit Target:</strong> Calculate the height of the range ($50 - $45 = $5) and project it above the breakout level for a target of $55.</p>
+                                </div>
+                                <div class="example-visual">
+                                    <div class="chart-placeholder">
+                                        <img src="../images/charts/breakout-example.jpg" alt="Breakout Trading Example Chart" class="strategy-chart">
+                                        <p class="chart-caption">Example of a valid breakout with volume confirmation. Note the increased volume on the breakout candle.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="pro-con-list">
+                                <div class="pros">
+                                    <h4>Advantages</h4>
+                                    <ul>
+                                        <li>Clear entry and exit points</li>
+                                        <li>Favorable risk-reward ratios</li>
+                                        <li>Potential to catch the beginning of major trends</li>
+                                        <li>Works in various market conditions</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h4>Challenges</h4>
+                                    <ul>
+                                        <li>False breakouts are common</li>
+                                        <li>Requires patience during consolidation</li>
+                                        <li>May miss entry if breakout is too explosive</li>
+                                        <li>Needs proper volume confirmation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="strategy" id="mean-reversion">
+                            <h2>2. Mean Reversion</h2>
+                            <div class="strategy-intro">
+                                <p>
+                                    Mean reversion operates on the principle that asset prices tend to return to their historical average over time. This strategy involves identifying extremes in price movement and positioning for a return to normalcy.
+                                </p>
+                            </div>
+                            
+                            <h3>Key Elements</h3>
+                            <ul>
+                                <li>Identify overbought or oversold conditions using oscillators</li>
+                                <li>Enter positions counter to the recent trend</li>
+                                <li>Set tight stop-losses as protection against trending markets</li>
+                                <li>Take profits as price approaches the mean or moving average</li>
+                            </ul>
+                            
+                            <h3>Tools and Indicators</h3>
+                            <ul>
+                                <li>Relative Strength Index (RSI) to identify overbought/oversold conditions</li>
+                                <li>Bollinger Bands to visualize price extremes</li>
+                                <li>Average True Range (ATR) for volatility assessment</li>
+                            </ul>
+                            
+                            <div class="strategy-example">
+                                <h3>Example Mean Reversion Setup</h3>
+                                <div class="example-scenario">
+                                    <p><strong>Scenario:</strong> Stock ABC has dropped 15% in three days on no company-specific news. The RSI reading is now 25, indicating an oversold condition.</p>
+                                    
+                                    <p><strong>Entry Signal:</strong> ABC forms a bullish candlestick pattern (such as a hammer) while RSI is below 30, and price touches the lower Bollinger Band.</p>
+                                    
+                                    <p><strong>Stop Loss:</strong> Place a stop 1 ATR below the entry candle's low.</p>
+                                    
+                                    <p><strong>Profit Target:</strong> The 20-day moving average or the middle Bollinger Band.</p>
+                                </div>
+                                <div class="example-visual">
+                                    <div class="chart-placeholder">
+                                        <img src="../images/charts/mean-reversion-example.jpg" alt="Mean Reversion Example Chart" class="strategy-chart">
+                                        <p class="chart-caption">Example of a mean reversion setup with RSI indicating oversold conditions and price returning to the moving average.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="pro-con-list">
+                                <div class="pros">
+                                    <h4>Advantages</h4>
+                                    <ul>
+                                        <li>High probability of success in ranging markets</li>
+                                        <li>Countertrend moves often occur quickly</li>
+                                        <li>Clear profit targets based on historical averages</li>
+                                        <li>Capitalizes on market overreactions</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h4>Challenges</h4>
+                                    <ul>
+                                        <li>Can fail dramatically in strong trends</li>
+                                        <li>Requires precise timing to avoid "catching falling knives"</li>
+                                        <li>Often requires trading against prevailing market sentiment</li>
+                                        <li>May require multiple attempts to time correctly</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional strategies would continue here -->
+                        
+                        <div class="strategy-comparison">
+                            <h2>Strategy Selection Guide</h2>
+                            <p>Choose the most appropriate strategy based on market conditions and your trading style:</p>
+                            
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Strategy</th>
+                                        <th>Best Market Conditions</th>
+                                        <th>Typical Holding Period</th>
+                                        <th>Skill Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Breakout Trading</td>
+                                        <td>Low to high volatility transitions</td>
+                                        <td>5-15 days</td>
+                                        <td>Beginner to Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mean Reversion</td>
+                                        <td>Ranging, non-trending markets</td>
+                                        <td>2-7 days</td>
+                                        <td>Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trend Following</td>
+                                        <td>Strong, established trends</td>
+                                        <td>10-30 days</td>
+                                        <td>Beginner</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pullback Trading</td>
+                                        <td>Established trends with regular retracements</td>
+                                        <td>7-21 days</td>
+                                        <td>Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Price Action Trading</td>
+                                        <td>All market conditions</td>
+                                        <td>Variable (3-20 days)</td>
+                                        <td>Intermediate to Advanced</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="strategy-tips">
+                            <h2>Implementation Tips</h2>
+                            <div class="tip-cards">
+                                <div class="tip-card">
+                                    <h3>Start with One Strategy</h3>
+                                    <p>Rather than trying multiple approaches simultaneously, master one strategy that aligns with your personality and trading style before expanding your toolkit.</p>
+                                </div>
+                                
+                                <div class="tip-card">
+                                    <h3>Document Your Rules</h3>
+                                    <p>Create a written trading plan for your chosen strategy with specific entry, exit, and position sizing rules to maintain consistency and discipline.</p>
+                                </div>
+                                
+                                <div class="tip-card">
+                                    <h3>Backtest Thoroughly</h3>
+                                    <p>Test your strategy on historical data across different market conditions to understand its strengths, weaknesses, and expected performance metrics.</p>
+                                </div>
+                                
+                                <div class="tip-card">
+                                    <h3>Practice with Paper Trading</h3>
+                                    <p>Implement your strategy in a simulated environment before committing real capital to build confidence and refine your execution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="next-up">
+                            <h2>Ready for More Advanced Approaches?</h2>
+                            <p>Once you've mastered these core strategies, you can explore more sophisticated methods to enhance your trading toolkit.</p>
+                            <a href="lesser-known-strategies.html" class="btn btn-primary">Explore Advanced Strategies &rarr;</a>
+                        </div>
+                    </div>
+
+                    <aside class="sidebar">
+                        <div class="card toc-card">
+                            <h3>On This Page</h3>
+                            <ul class="toc-list">
+                                <li><a href="#breakout-trading">Breakout Trading</a></li>
+                                <li><a href="#mean-reversion">Mean Reversion</a></li>
+                                <li><a href="#trend-following">Trend Following</a></li>
+                                <li><a href="#pullback-trading">Pullback Trading</a></li>
+                                <li><a href="#price-action-trading">Price Action Trading</a></li>
+                                <li><a href="#strategy-comparison">Strategy Comparison</a></li>
+                                <li><a href="#strategy-tips">Implementation Tips</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card resource-card mt-lg">
+                            <h3>Related Resources</h3>
+                            <ul class="resource-list">
+                                <li><a href="../technical/indicators.html">Essential Technical Indicators</a></li>
+                                <li><a href="../technical/chart-patterns.html">Chart Pattern Recognition</a></li>
+                                <li><a href="../risk-management.html">Risk Management Techniques</a></li>
+                                <li><a href="lesser-known-strategies.html">Advanced Trading Strategies</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card strategy-finder mt-lg">
+                            <h3>Find Your Strategy</h3>
+                            <p>Not sure which strategy fits your trading style? Try our quick assessment:</p>
+                            <div class="strategy-questions">
+                                <div class="strategy-question">
+                                    <p><strong>Are you patient enough to wait for clear setups?</strong></p>
+                                    <p class="recommendation">If yes, consider <a href="#breakout-trading">Breakout Trading</a> or <a href="#trend-following">Trend Following</a>.</p>
+                                </div>
+                                
+                                <div class="strategy-question">
+                                    <p><strong>Do you prefer going against the crowd?</strong></p>
+                                    <p class="recommendation">If yes, you might excel at <a href="#mean-reversion">Mean Reversion</a>.</p>
+                                </div>
+                                
+                                <div class="strategy-question">
+                                    <p><strong>Do you prefer lower-risk entries?</strong></p>
+                                    <p class="recommendation"><a href="#pullback-trading">Pullback Trading</a> might be ideal for you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card ebook-cta mt-lg">
+                            <h3>Get the Complete Guide</h3>
+                            <p>Download our comprehensive swing trading ebook with detailed examples and step-by-step instructions.</p>
+                            <a href="../index.html#ebook-cta" class="btn btn-primary btn-block">Download Free Ebook</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Swing Trading<span class="highlight">Guide</span></h2>
+                    <p>Your complete resource for mastering swing trading strategies and techniques.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Site Navigation</h3>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../introduction.html">Introduction</a></li>
+                            <li><a href="index.html">Strategies</a></li>
+                            <li><a href="../technical/index.html">Technical Analysis</a></li>
+                            <li><a href="../risk-management.html">Risk Management</a></li>
+                            <li><a href="../trader-wisdom.html">Trader Wisdom</a></li>
+                            <li><a href="../building-system.html">Build Your System</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-resources">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="../index.html#ebook-cta">Free Ebook</a></li>
+                            <li><a href="#">Trading Glossary</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Swing Trading Guide. All rights reserved.</p>
+                <div class="footer-disclaimer">
+                    <p>Disclaimer: All information provided on this site is for educational purposes only and does not constitute financial advice. Trading involves risk, and past performance is not indicative of future results.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/core-strategies.js" defer></script>
+</body>
+</html>

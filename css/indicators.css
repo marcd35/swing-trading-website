@@ -1,0 +1,302 @@
+/**
+ * Technical Indicators Page Styles
+ * This file contains specific styles for the technical indicators page
+ * of the Swing Trading Guide website.
+ *
+ * File locations:
+ * - /css/indicators.css
+ * - Linked from /technical/indicators.html
+ */
+
+/* Article Layout */
+.article-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.article-content {
+    max-width: 800px;
+}
+
+/* Intro Section */
+.indicator-intro {
+    margin-bottom: var(--spacing-xl);
+}
+
+.usage-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.tip-card {
+    background-color: var(--color-card-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.tip-card h3 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+/* Indicator Categories */
+.indicator-category {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.indicator-category h2 {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Individual Indicators */
+.indicator {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.indicator:last-child {
+    border-bottom: none;
+}
+
+.indicator h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.indicator h4 {
+    font-size: 1.125rem;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-dark);
+}
+
+/* Indicator Content Layout */
+.indicator-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+/* Indicator Examples */
+.indicator-example {
+    background-color: rgba(37, 99, 235, 0.05);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    margin: var(--spacing-lg) 0;
+}
+
+.example-chart {
+    border-bottom: 1px solid var(--color-border);
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.indicator-chart {
+    max-width: 100%;
+    height: auto;
+}
+
+.example-description {
+    padding: var(--spacing-md);
+}
+
+.example-description p {
+    margin: 0;
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+/* Indicator Usage Section */
+.indicator-usage {
+    background-color: var(--color-card-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.indicator-usage h4 {
+    margin-top: 0;
+    color: var(--color-text-dark);
+}
+
+.indicator-usage ol {
+    margin-bottom: 0;
+}
+
+/* Next Steps Section */
+.related-topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.topic-card {
+    background-color: var(--color-card-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    display: block;
+    color: var(--color-text);
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+}
+
+.topic-card h3 {
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+}
+
+.topic-card p {
+    margin: 0;
+    color: var(--color-text-light);
+}
+
+.cta-box {
+    background-color: rgba(37, 99, 235, 0.05);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+    text-align: center;
+}
+
+.cta-box h3 {
+    margin-top: 0;
+}
+
+/* Sidebar Components */
+.toc-card {
+    position: sticky;
+    top: 90px;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.toc-list li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.toc-list ul {
+    list-style: none;
+    padding-left: var(--spacing-md);
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+}
+
+.toc-list ul li {
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.85rem;
+}
+
+.toc-list a {
+    color: var(--color-text);
+    display: block;
+    padding: var(--spacing-xs) 0;
+    border-left: 2px solid transparent;
+    padding-left: var(--spacing-xs);
+    transition: all 0.3s ease;
+}
+
+.toc-list a:hover,
+.toc-list a.active {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    text-decoration: none;
+    padding-left: var(--spacing-sm);
+}
+
+/* Resource List */
+.resource-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-list li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.resource-list a {
+    display: block;
+    padding: var(--spacing-sm);
+    background-color: rgba(37, 99, 235, 0.05);
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease;
+}
+
+.resource-list a:hover {
+    background-color: rgba(37, 99, 235, 0.1);
+    transform: translateX(5px);
+    text-decoration: none;
+}
+
+/* Indicator Finder */
+.finder-questions {
+    margin-top: var(--spacing-md);
+}
+
+.finder-question {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px dashed var(--color-border);
+}
+
+.finder-question:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.finder-question p {
+    margin: 0 0 var(--spacing-xs) 0;
+}
+
+.recommendation {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .topic-card {
+        padding: var(--spacing-md);
+    }
+    
+    .indicator-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .usage-tips,
+    .related-topics {
+        grid-template-columns: 1fr;
+    }
+    
+    .indicator-category h2 {
+        font-size: 1.75rem;
+    }
+    
+    .indicator h3 {
+        font-size: 1.5rem;
+    }
+}

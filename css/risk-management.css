@@ -1,0 +1,280 @@
+/**
+ * Risk Management Page Styles
+ * This file contains specific styles for the risk management page
+ * of the Swing Trading Guide website.
+ *
+ * File locations:
+ * - /css/risk-management.css
+ * - Linked from /risk-management.html
+ */
+
+/* Risk Section Styles */
+.article-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.article-content {
+    max-width: 800px;
+}
+
+.risk-section {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.risk-section h2 {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Statistics Grid */
+.statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.statistic-card {
+    background-color: var(--color-card-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+.statistic-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.statistic-description {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+}
+
+/* Key Concept Boxes */
+.key-concept {
+    background-color: rgba(37, 99, 235, 0.05);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.key-concept h3 {
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Tables */
+.recovery-table-container {
+    overflow-x: auto;
+    margin: var(--spacing-md) 0;
+}
+
+.recovery-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recovery-table th {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-sm);
+    text-align: left;
+}
+
+.recovery-table td {
+    padding: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.recovery-table tr:nth-child(even) {
+    background-color: rgba(37, 99, 235, 0.05);
+}
+
+/* Technique Styles */
+.technique {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.technique:last-child {
+    border-bottom: none;
+}
+
+.technique h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.technique-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: var(--spacing-lg);
+}
+
+.technique-description h4 {
+    font-size: 1.125rem;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-dark);
+}
+
+.technique-description h5 {
+    font-size: 1rem;
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-dark);
+}
+
+/* Formula Style */
+.formula {
+    background-color: rgba(37, 99, 235, 0.05);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    margin: var(--spacing-md) 0;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.formula p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Tool and Chart Containers */
+.technique-tools,
+.technique-chart {
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+.calculator-placeholder {
+    padding: var(--spacing-md);
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius-sm);
+}
+
+.calculator-description {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+.calculator-description p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.calculator-description ul {
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-lg);
+}
+
+.technique-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.chart-caption {
+    padding: var(--spacing-sm);
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    margin: 0;
+    font-style: italic;
+}
+
+/* Conclusion Section */
+.conclusion {
+    background-color: rgba(37, 99, 235, 0.05);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xl);
+    margin-top: var(--spacing-xxl);
+}
+
+.conclusion h2 {
+    margin-top: 0;
+}
+
+.next-topic {
+    margin-top: var(--spacing-xl);
+    text-align: center;
+}
+
+/* Sidebar Components */
+.toc-card {
+    position: sticky;
+    top: 90px;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.toc-list li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.toc-list ul {
+    list-style: none;
+    padding-left: var(--spacing-md);
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+}
+
+.toc-list ul li {
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.85rem;
+}
+
+.toc-list a {
+    color: var(--color-text);
+    display: block;
+    padding: var(--spacing-xs) 0;
+    border-left: 2px solid transparent;
+    padding-left: var(--spacing-xs);
+    transition: all 0.3s ease;
+}
+
+.toc-list a:hover,
+.toc-list a.active {
+    color: var(--color-primary);
+    border-left-color: var(--color-primary);
+    text-decoration: none;
+    padding-left: var(--spacing-sm);
+}
+
+/* Calculator Card */
+.calculator-card {
+    background-color: var(--color-card-bg);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .technique-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .technique-tools,
+    .technique-chart {
+        margin-top: var(--spacing-md);
+    }
+}
+
+@media (max-width: 768px) {
+    .statistics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .risk-section h2 {
+        font-size: 1.75rem;
+    }
+}
