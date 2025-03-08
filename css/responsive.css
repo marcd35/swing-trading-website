@@ -1,1 +1,257 @@
- 
+/* Responsive styles for Swing Trading Guide */
+
+/* Larger Desktops */
+@media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  
+    .hero h1 {
+      font-size: 3.5rem;
+    }
+  }
+  
+  /* Standard Desktops and Laptops */
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  /* Small Laptops and Tablets Landscape */
+  @media (max-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  
+    /* Header adjustments */
+    .logo h1 {
+      font-size: 1.25rem;
+    }
+  
+    /* Hero section */
+    .hero {
+      padding: var(--spacing-xl) 0;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.125rem;
+    }
+  
+    /* Features grid */
+    .feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /* CTA section */
+    .cta-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-xl);
+    }
+  
+    /* Footer */
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+  }
+  
+  /* Tablets and Mobile Landscape */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  
+    /* Mobile navigation */
+    .mobile-menu-toggle {
+      display: block;
+    }
+    
+    .nav-links {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: white;
+      flex-direction: column;
+      padding: var(--spacing-lg);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+    
+    .nav-links.active {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+    
+    .nav-links li {
+      margin: var(--spacing-md) 0;
+      margin-left: 0;
+    }
+  
+    /* Hero section */
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+    
+    .hero-cta {
+      flex-direction: column;
+      gap: var(--spacing-md);
+    }
+  
+    /* Content sections */
+    section {
+      padding: var(--spacing-xl) 0;
+    }
+  
+    .section-heading {
+      margin-bottom: var(--spacing-lg);
+    }
+  
+    .section-heading h2 {
+      font-size: 1.75rem;
+    }
+  
+    /* Feature cards */
+    .feature-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Footer */
+    .footer-links {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+  }
+  
+  /* Mobile Only */
+  @media (max-width: 576px) {
+    .container {
+      max-width: 100%;
+      padding: 0 var(--spacing-md);
+    }
+  
+    /* Text sizing */
+    body {
+      font-size: 15px;
+    }
+  
+    h1 {
+      font-size: 1.75rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+  
+    /* Content spacing */
+    section {
+      padding: var(--spacing-lg) 0;
+    }
+  
+    /* Form elements */
+    .cta-form {
+      padding: var(--spacing-lg);
+    }
+  
+    /* Content cards */
+    .content-card,
+    .feature-card {
+      padding: var(--spacing-lg);
+    }
+  
+    /* Buttons */
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Footer */
+    .site-footer {
+      padding: var(--spacing-lg) 0;
+    }
+  
+    .footer-content {
+      gap: var(--spacing-lg);
+    }
+  }
+  
+  /* Small Mobile */
+  @media (max-width: 375px) {
+    .container {
+      padding: 0 var(--spacing-sm);
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.35rem;
+    }
+  
+    .hero-cta .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Print Styles */
+  @media print {
+    body {
+      font-size: 12pt;
+      line-height: 1.5;
+      color: #000;
+      background: #fff;
+    }
+  
+    .site-header,
+    .site-footer,
+    .hero,
+    .ebook-cta,
+    .mobile-menu-toggle,
+    .btn {
+      display: none;
+    }
+  
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      page-break-after: avoid;
+      page-break-inside: avoid;
+    }
+  
+    img {
+      max-width: 100% !important;
+      page-break-inside: avoid;
+    }
+  
+    p, blockquote, ul, ol, dl, table {
+      page-break-inside: avoid;
+    }
+  
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
